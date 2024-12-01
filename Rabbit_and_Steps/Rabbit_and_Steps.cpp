@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-int rabbit_and_steps(int n, int k = 3)
+int rabbit_and_steps(int n, int k = 3)          //Метод для вычисления кол-ва вариантов прохода лестницы кроликом
 {
     int count = 0;
 
@@ -18,7 +18,10 @@ int rabbit_and_steps(int n, int k = 3)
 
 int main()
 {
-    int n = 5;
-    int k = 4;
+    int n;                                                   //Объявляем переменную для записи кол-ва ступеней
+    int k;                                                   //Объявляем переменную для записи кол-ва максимального прыжка кролика
+    std::cout << "Enter the number of steps in the ladder and the maximum number of steps the rabbit can jump over: ";//Запрос
+    std::cin >> n >> k;                                      //Запись значений
     std::cout << ' ' << rabbit_and_steps(n, k) << std::endl; //Выводим результат вычисления.
+    return 0;
 }
